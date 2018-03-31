@@ -1,0 +1,17 @@
+{
+    "name": "image-search",
+    "version": "1.0.0",
+    "description": "Free Code Camp - Image Search Abstraction Microservice",
+    "main": "app.js",
+    "scripts": {
+        "start": "node app.js"
+    },
+    "author": "Kashif Jamal Soofi",
+    "license": "MIT",
+    "dependencies": {
+        "ejs": "2.5.8",
+        "express": "4.16.3",
+        "mongoose": "5.0.12",
+        "swagger-ui-express": "latest"
+    }
+}
