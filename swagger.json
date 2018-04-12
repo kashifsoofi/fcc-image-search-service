@@ -21,7 +21,7 @@
       "application/json"
     ],
     "paths": {
-      "/search": {
+      "/search/{term}": {
         "parameters": [
           {
             "name": "term",
@@ -48,7 +48,7 @@
           }
         }
       },
-      "/latest": {
+      "/latest/imagesearch": {
         "get": {
           "summary": "Return recent image searches",
           "responses": {

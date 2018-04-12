@@ -8,6 +8,6 @@ var searches = require('../api/controllers/searches.js');
 
 router.get('/', index);
 router.get('/api/search/:term', images);
-router.get('/api/latest', searches);
+router.get('/api/latest/imagesearch', searches);
 
 module.exports = router

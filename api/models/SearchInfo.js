@@ -3,8 +3,9 @@ var mongoose = require('mongoose');
 
 var searchInfoSchema = new mongoose.Schema({
     term: String,
+    offset: String,
     when: String
-});
+}, { capped: { size: 10000, max: 10 }});
 
-var SearchInfo = mongoose.model('SearchInfo', searchInfoSchema);
-module.exports = SearchInfo;
+var searchInfo = mongoose.model('searchInfo', searchInfoSchema);
+module.exports = searchInfo;
