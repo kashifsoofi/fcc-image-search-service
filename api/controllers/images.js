@@ -22,8 +22,13 @@ function search(req, res) {
         console.log('Saved: ', objSaved);        
     });
 
-    var searchResults = imageSearchService.search(term, offset);
-    res.json(searchResults);
+    callback = function resultCallback(searchResults) {
+        res.json(searchResults);
+    }
+
+    imageSearchService.search(term, offset, function (searchResults) {
+        res.json(searchResults);
+    });
 }
 
 module.exports = search;

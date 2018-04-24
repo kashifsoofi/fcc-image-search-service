@@ -13,7 +13,7 @@ function recent(req, res) {
             throw err;
         }
 
-        res.json(data);
+        res.json(data.reverse());
     });
 }
 
