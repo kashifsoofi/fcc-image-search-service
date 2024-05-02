@@ -9,7 +9,7 @@
     "author": "Kashif Jamal Soofi",
     "license": "MIT",
     "dependencies": {
-        "ejs": "3.1.7",
+        "ejs": "3.1.10",
         "express": "4.19.2",
         "moment": "^2.22.1",
         "mongoose": "5.13.20",
